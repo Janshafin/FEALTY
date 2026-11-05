@@ -22,7 +22,7 @@ remappings = [
   "solady/=lib/contracts-v2/contracts/lib/solady/src/",
 ]
 
-fs_permissions = [{ access = "read-write", path = "../deployments" }, { access = "read", path = "./lib/contracts-v2/contracts/deployments" }]
+fs_permissions = [{ access = "read-write", path = "../deployments" }, { access = "read", path = "./lib/contracts-v2/contracts/deployments" }, { access = "read", path = "../scripts/seed" }, { access = "read", path = "./out" }]
 
 [rpc_endpoints]
 sepolia = "${SEPOLIA_RPC_URL}"
