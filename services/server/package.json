@@ -9,8 +9,11 @@
     "test": "vitest run --passWithNoTests"
   },
   "dependencies": {
+    "@fealty/shared": "*",
+    "@hono/node-server": "^2.1.6",
+    "@worldcoin/idkit-core": "^4.6.0",
+    "hono": "^4.13.16",
     "viem": "^2.57.16",
-    "zod": "^4.6.7",
-    "@fealty/shared": "*"
+    "zod": "^4.6.7"
   }
 }

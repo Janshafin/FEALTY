@@ -17,5 +17,8 @@
   "types": "./src/index.ts",
   "exports": {
     ".": "./src/index.ts"
+  },
+  "devDependencies": {
+    "@worldcoin/idkit-core": "^4.6.0"
   }
 }
