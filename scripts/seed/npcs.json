@@ -1,0 +1,14 @@
+{
+  "_note": "HUMANS: rewrite these. Labels are 3-20 chars of a-z, 0-9 and hyphens. NPCs can pledge on Arkiv but cannot vote (no World ID), which is why a real human is always decisive.",
+  "labels": ["tanner-guild", "ironside", "lady-wren", "old-marrow", "the-ferryman", "brother-ash", "vesper", "kestrel"],
+  "banners": [
+    "We tan hides and keep our heads down.",
+    "Loyal to whoever pays the wall-builders.",
+    "I remember the last tyrant.",
+    "Another winter, another decree.",
+    "I carry anyone across. Even you.",
+    "Pray quietly.",
+    "The ledger remembers.",
+    "Watching from the tower."
+  ]
+}
