@@ -1,3 +1,4 @@
+import type { Address } from "viem"
 import { describe, expect, it } from "vitest"
 import { countValidPledges, type ManifestoInput, type PledgeInput, type VassalState } from "../src/index.js"
 
@@ -7,7 +8,7 @@ const C = "0x00000000000000000000000000000000000000c3" as const
 const D = "0x00000000000000000000000000000000000000d4" as const
 
 const manifesto: ManifestoInput = { entityKey: "0xman", owner: A, author: A, expired: false }
-const pledge = (who: typeof A, key = `0xp-${who}`, over: Partial<PledgeInput> = {}): PledgeInput => ({
+const pledge = (who: Address, key = `0xp-${who}`, over: Partial<PledgeInput> = {}): PledgeInput => ({
   entityKey: key,
   owner: who,
   pledger: who,
