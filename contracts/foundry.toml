@@ -1,0 +1,27 @@
+[profile.default]
+src = "src"
+out = "out"
+test = "test"
+script = "script"
+libs = ["lib"]
+solc = "0.8.25"
+evm_version = "cancun"
+optimizer = true
+optimizer_runs = 200
+via_ir = false
+remappings = [
+  "@ens-v2/=lib/contracts-v2/contracts/src/",
+  "@openzeppelin/contracts/=lib/contracts-v2/contracts/lib/openzeppelin-contracts/contracts/",
+  "@openzeppelin/contracts-upgradeable/=lib/contracts-v2/contracts/lib/openzeppelin-contracts-upgradeable/contracts/",
+  "@ensdomains/verifiable-factory/=lib/contracts-v2/contracts/lib/verifiable-factory/src/",
+  "forge-std/=lib/contracts-v2/contracts/lib/forge-std/src/",
+  "solady/=lib/contracts-v2/contracts/lib/solady/src/",
+]
+
+fs_permissions = [{ access = "read-write", path = "../deployments" }, { access = "read", path = "./lib/contracts-v2/contracts/deployments" }]
+
+[rpc_endpoints]
+sepolia = "${SEPOLIA_RPC_URL}"
+
+[fuzz]
+runs = 512
